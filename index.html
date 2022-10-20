@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+    <title>Product preview card component</title>
+</head>
+<body>
+    <main>
+        <section class="sectionProduto">
+            <div class="containerImg"> 
+                <picture>
+                    <source media="(min-width: 1200px )" srcset="src/image-product-desktop2.jpg">
+                    <source media="(min-width: 1400px)" srcset="src/image-product-desktop.jpg">
+                    <img src="src/image-product-mobile2.jpg" class="imgProduto" alt="Perfume Gabrielle Essence"> 
+                </picture>
+            </div>  
+            <div class="containerDadosProduto"> 
+                <h1 class="headerTipoProduto">Perfume</h1>
+                <h2 class="headNomeProduto">Gabrielle Essence Eau De Parfum</h2>
+                <p class="bodyDescricaoProd">A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfurmer-Creator for the House of CHANEL.</p>
+                <div class="containerPrecoProduto">
+                    <div class="precoProdFinal">$149.99 <del class="precoProdInicial">$169.99</del> </div>
+                    <div class="containerBtnAdicionarCar">
+                    <div class="containerAdiconarCar"> <span> 
+                <picture>
+                    <source media="(min-width: 1200px )" srcset="src/marketCar-icon.png">
+                    <img src="src/icon-cart.png" alt="carrinho de supermercado"> Add  to Cart</span>
+                </picture>      
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
