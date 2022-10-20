@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --corCorpo:hsl(30, 38%, 92%);
+    --corSectionTexto: hsl(0, 0%, 100%);
+    --corHeaderTipoProd: hsl(212, 21%, 14%);
+    --fonteHeaderTipoProd: 'Montserrat','Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    --fonteHeadNomeProd: 'Fraunces','Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: var(--corCorpo) ;
+}
+
+.sectionProduto {
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 340px;
+    height: 88vh;
+    background-color: var(--corSectionTexto);
+}
+
+.containerImg {
+    border-radius: 15px 15px 0px 0px ;
+}
+
+.containerDadosProduto>.headerTipoProduto {
+    text-transform: uppercase; /* Transformar letras de um parágrafo ou texto para maiúsculo ou minúsculo */
+    letter-spacing: 4px; /* Propriedade para promover o espaçamento entre as letras */
+    color: var(--corHeaderTipoProd);
+    font-size: 15px;
+    font-family: var(--fonteHeaderTipoProd);
+    font-weight: 500;
+    margin: 2vh 0vw auto 4vw;
+}
+
+.headNomeProduto {
+    color: hsl(0, 0%, 0%);
+    font-size: 35px;
+    font-weight: 700;
+    font-family: var(--fonteHeadNomeProd);
+    margin: 2vh 0px auto 3vw;
+}
+
+.bodyDescricaoProd {
+    color: hsl(0, 0%, 50%);
+    font-size: 15px;
+    font-family: var(--fonteHeaderTipoProd);
+    font-weight: 500;
+    margin: 2vh 0vw auto 4vw;
+    text-align: left;
+}
+
+.precoProdFinal {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-family: var(--fonteHeadNomeProd);
+    font-weight: 700;
+    margin: 2vh 0px auto 3vw;
+}
+
+.precoProdInicial {
+    color: hsl(0, 0%, 50%);
+    font-size: 14px;
+    margin: 0px 0px 2vh 5vw;
+    font-family: var(--fonteHeaderTipoProd);
+    font-weight: normal;
+}
+
+.containerAdiconarCar {
+    background-color: hsl(158, 36%, 37%);
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 300px;
+    height: 5vh;
+    margin: 2vh;
+}
+
+.containerAdiconarCar:hover {
+    background-color: hsl(158, 35%, 20%);
+    cursor: pointer;
+}
+
+.containerAdiconarCar> span {
+    font-family: var(--fonteHeaderTipoProd);
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media all and (orientation:landscape)  {
+    .sectionProduto {
+        display: flex;
+        flex-direction: row;
+        margin: 20px auto;
+        border-radius: 15px;
+        width: 96vw;
+        height: 90vh;
+        background-color: var(--corSectionTexto);
+    }
+    .containerAdiconarCar {
+        background-color: hsl(158, 36%, 37%);
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        width: 40vw;
+        height: 8vh;
+        margin: 2vh;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .sectionProduto {
+        width: 97vw;
+        height: 80vh;
+    }
+
+    .containerDadosProduto>.headerTipoProduto {
+        font-size: 3vh;
+    }
+
+    .imgProduto {
+        border-radius: 15px 0px 0px 0px ;
+    }
+
+    .headNomeProduto {
+        font-size: 10vh;
+    }
+
+    .bodyDescricaoProd {
+        font-size: 4vh;
+    }
+
+    .precoProdFinal {
+        font-size: 9vh;
+    }
+
+    .precoProdInicial {
+        font-size: 6vh;
+    }
+
+    .containerAdiconarCar {
+        width: 50vw;
+        height: 15vh;
+    }
+
+    .containerAdiconarCar> span {
+        font-size: 8vh;
+    }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1399px) {
+    .sectionProduto {
+        width: 97vw;
+        height: 96vh;
+    }
+
+    .imgProduto {
+        border-radius: 15px 0px 0px 15px ;
+    }
+
+    .containerDadosProduto>.headerTipoProduto {
+        font-size: 3vh;
+    }
+
+    .headNomeProduto {
+        font-size: 10vh;
+    }
+
+    .bodyDescricaoProd {
+        font-size: 4vh;
+    }
+
+    .precoProdFinal {
+        font-size: 9vh;
+    }
+
+    .precoProdInicial {
+        font-size: 6vh;
+    }
+
+    .containerAdiconarCar {
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .containerAdiconarCar> span {
+        font-size: 8vh;
+        position: relative;
+        top: -5px;
+    }
+}
