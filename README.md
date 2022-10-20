@@ -13,7 +13,8 @@
 
 Projeto simples que consiste em uma página de anúncio do produto Gabrielle Essence Eau De Parfum
 
-## [Acessar o site] ()
+## [Acessar site](https://matheusfeliperuiz.github.io/Product-Preview-Card-Component/)
+
 ##  Desenvolvido com: 
 
 <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <strong> HTML</strong>
